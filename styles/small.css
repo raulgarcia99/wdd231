@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #0F103B;
+    --secondary-color: #FFE15C;
+    --accent1-color: #121113;
+    --accent2-color: #DCD7C8;
+    --header-font: 400 40px "Fugaz One", sans-serif;
+    --text-font: 400 25px "Arvo", serif;
+    --light-font: #ffffff;
+    --dark-font: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    font: var(--text-font);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+
+header {
+    background-color: var(--primary-color);
+    display: block;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+.web-title {
+    font: var(--header-font);
+    color: var(--light-font);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navButton::before {
+    content: \2630;
+}
+
+.navButton.show::before {
+    content: \00D7;
+}
+
+nav {
+    background-color: var(--secondary-color);
+}
+
+ul li {
+    display: flex;
+}
+
+/*Main*/
+
+h1 {
+    font: var(--header-font);
+}
+
+h2 {
+    font: var(--header-font);
+    font-size: 30px;
+    background-color: var(--accent1-color);
+    color: var(--light-font);
+}
+
+.container {
+    background-color: var(--accent2-color);
+}
+
+#profile {
+    height: 300px;
+    width: auto;
+}
+
+.filter {
+    background-color: var(--primary-color);
+    color: var(--light-font);
+    font-size: 30px;
+}
+
+/*Footer*/
+
+    /*Logos are on the header section*/
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-font)
+}
+
+.socialmedia {
+    display: flex;
+}

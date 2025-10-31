@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <meta name="description" content="Take a look in my academic profile and see all what I have progressed at BYU,
+    visit my page and know a little bit about me and my projects along this course">
+    <meta name="author" content="Raul Garcia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <script src="scripts/date.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <img src="images/moon-logo.svg" alt="Half moon logo for 'My Portfolio' website" class="logo" loading="lazy">
+        <span class="web-title">Raul A. Garcia</span>
+        <input type="button" id="navButton" class="navButton" aria-label="More options">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="">Chamber Project</a></li>
+                <li><a href="">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <div class="container">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus eos dignissimos ex provident molestias asperiores impedit sapiente? In quo a laborum, quam vitae possimus porro suscipit aliquid illo explicabo modi!
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Student Photo</h2>
+            <div class="container">
+                <img src="images/profile-picture.webp" id="profile" alt="Raul Garcia's profile picture" loading="lazy">
+            </div>
+        </section>
+
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <input type="button" class="filter" value="All">
+            <input type="button" class="filter" value="CSE">
+            <input type="button" class="filter" value="WDD">
+
+            <div id="options"></div>
+            <span id="credits"></span>
+        </section>
+
+    </main>
+    <footer>
+        <div class="socialmedia">
+            <a href=""><img src="images/linkedin-logo.svg" class="logo" alt="LinkedIn logo"></a>
+            <a href=""><img src="images/github-logo.svg" class="logo" alt="Github logo"></a>
+            <a href=""><img src="images/facebook-logo.svg" class="logo" alt="Facebook logo"></a>
+        </div>
+        <p>©<span id="currentYear"></span>, Raul A. Garcia, El Salvador</p>
+        <span id="lastModified"></span>
+    </footer>
 </body>
 </html>
