@@ -27,39 +27,93 @@ header {
 }
 
 .logo {
-    width: 60px;
+    width: 55px;
     height: auto;
+}
+
+#web-icon {
+    position: absolute;
+    top: 0.4rem;
+    left: 1rem;
 }
 
 .web-title {
     font: var(--header-font);
     color: var(--light-font);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    position: absolute;
+    top: 0.4rem;
+    right: 1rem;
+}
+
+.hamburger::before {
+    content: "\2630";
+    color: var(--light-font);
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    color: var(--light-font);
+}
+
+.navigation {
+    background-color: var(--secondary-color);
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
+    list-style-type: none;
+    padding: 15px;
 }
 
-.navButton::before {
-    content: \2630;
+.navigation li {
+    width: 100%;
 }
 
-.navButton.show::before {
-    content: \00D7;
+.navigation ul li a {
+    text-decoration: none;
+    color: var(--dark-font);
+    text-align: center;
+    padding: 10px;
 }
 
-nav {
-    background-color: var(--secondary-color);
+.navigation ul li a:hover {
+    background-color: var(--accent2-color);
 }
 
-ul li {
-    display: flex;
+.show a {
+    display: block;
 }
 
 /*Main*/
 
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    width: 100%;
+}
+
 h1 {
     font: var(--header-font);
+    text-align: center;
 }
 
 h2 {
@@ -67,15 +121,32 @@ h2 {
     font-size: 30px;
     background-color: var(--accent1-color);
     color: var(--light-font);
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+    margin: 0;
 }
 
 .container {
     background-color: var(--accent2-color);
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
 }
 
 #profile {
     height: 300px;
     width: auto;
+    display: block;
 }
 
 .filter {
@@ -90,9 +161,13 @@ h2 {
 
 footer {
     background-color: var(--primary-color);
-    color: var(--light-font)
+    color: var(--light-font);
+    text-align: center;
 }
 
 .socialmedia {
     display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
 }

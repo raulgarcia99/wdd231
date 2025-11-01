@@ -15,10 +15,10 @@
 </head>
 <body>
     <header>
-        <img src="images/moon-logo.svg" alt="Half moon logo for 'My Portfolio' website" class="logo" loading="lazy">
+        <img src="images/moon-logo.svg" alt="Half moon logo for 'My Portfolio' website" class="logo" id="web-icon" loading="lazy">
         <span class="web-title">Raul A. Garcia</span>
-        <input type="button" id="navButton" class="navButton" aria-label="More options">
-        <nav>
+        <button id="hamButton" class="hamburger" aria-label="More options"> </button>
+        <nav class="navigation" id="navBar">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="">Chamber Project</a></li>
@@ -45,9 +45,11 @@
 
         <section>
             <h2>Web Certificate Courses</h2>
-            <input type="button" class="filter" value="All">
-            <input type="button" class="filter" value="CSE">
-            <input type="button" class="filter" value="WDD">
+            <div class="buttons">
+                <input type="button" class="filter" value="All">
+                <input type="button" class="filter" value="CSE">
+                <input type="button" class="filter" value="WDD">
+            </div>
 
             <div id="options"></div>
             <span id="credits"></span>

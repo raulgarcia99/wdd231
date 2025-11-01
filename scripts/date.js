@@ -1,7 +1,9 @@
-const navButton = document.querySelector("#navButton");
+const hamButton = document.querySelector("#hamButton");
+const navBar = document.querySelector("#navBar")
 
-navButton.addEventListener("click", () => {
-    navButton.classList.toggle("show");
+hamButton.addEventListener("click", () => {
+    hamButton.classList.toggle("show");
+    navBar.classList.toggle("show")
 });
 
 const currentYear = document.querySelector("#currentYear");
