@@ -80,20 +80,32 @@ const courses = [
 
 createButtons(courses)
 
+//Filter cards
+
 const allFilter = document.querySelector("#all");
 allFilter.addEventListener("click", () => {
     createButtons(courses)
+    updateCredits(courses)
 })
 
 const cseFilter = document.querySelector("#cse");
 cseFilter.addEventListener("click", () => {
     createButtons(courses.filter(course => course.subject === "CSE"))
+    updateCredits(courses.filter(course => course.subject === "CSE"))
 })
 
 const wddFilter = document.querySelector("#wdd");
 wddFilter.addEventListener("click", () => {
     createButtons(courses.filter(course => course.subject === "WDD"))
+    updateCredits(courses.filter(course => course.subject === "WDD"))
 })
+
+const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
+  document.querySelector("#credits").textContent = `The total credits number of courses above is: ${totalCredits}`;
+
+
+
+//Functions
 
 function createButtons (courses) {
     document.querySelector("#options").innerHTML = "";
@@ -113,4 +125,9 @@ function createButtons (courses) {
 
         document.querySelector("#options").appendChild(div);
     });
+}
+
+function updateCredits(filteredCourses) {
+  const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+  document.querySelector("#credits").textContent = `The total credits number of courses above is: ${totalCredits}`;
 }
