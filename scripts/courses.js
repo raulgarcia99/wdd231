@@ -98,19 +98,19 @@ wddFilter.addEventListener("click", () => {
 function createButtons (courses) {
     document.querySelector("#options").innerHTML = "";
     courses.forEach(course => {
-        let button = document.createElement("button");
+        let div = document.createElement("div");
 
-        button.setAttribute("value", `${course.subject} ${course.number}`)
-        button.textContent = `${course.subject} ${course.number}`
+        div.setAttribute("value", `${course.subject} ${course.number}`)
+        div.textContent = `${course.subject} ${course.number}`
 
         if (course.completed) {
-            button.classList.add("course", "completed");
+            div.classList.add("course", "completed");
         } else {
-            button.classList.add("course");
+            div.classList.add("course");
         }
 
         
 
-        document.querySelector("#options").appendChild(button);
+        document.querySelector("#options").appendChild(div);
     });
 }
