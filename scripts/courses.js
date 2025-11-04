@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -60,7 +60,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -77,3 +77,40 @@ const courses = [
         completed: false
     }
 ]
+
+createButtons(courses)
+
+const allFilter = document.querySelector("#all");
+allFilter.addEventListener("click", () => {
+    createButtons(courses)
+})
+
+const cseFilter = document.querySelector("#cse");
+cseFilter.addEventListener("click", () => {
+    createButtons(courses.filter(course => course.subject === "CSE"))
+})
+
+const wddFilter = document.querySelector("#wdd");
+wddFilter.addEventListener("click", () => {
+    createButtons(courses.filter(course => course.subject === "WDD"))
+})
+
+function createButtons (courses) {
+    document.querySelector("#options").innerHTML = "";
+    courses.forEach(course => {
+        let button = document.createElement("button");
+
+        button.setAttribute("value", `${course.subject} ${course.number}`)
+        button.textContent = `${course.subject} ${course.number}`
+
+        if (course.completed) {
+            button.classList.add("course", "completed");
+        } else {
+            button.classList.add("course");
+        }
+
+        
+
+        document.querySelector("#options").appendChild(button);
+    });
+}
