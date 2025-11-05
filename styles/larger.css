@@ -23,11 +23,11 @@
         padding: 20px;
     }
 
+
     /*Main*/
 
     main {
         display: grid;
-        height: 100hv;
         grid-template-columns: 3fr 2fr;
     }
 
@@ -56,6 +56,17 @@
         grid-column: 1/3;
     }
 
+    .filter {
+        width: 25%;
+    }
+
+    #options {
+        width: 90%;
+    }
+
+    .course {
+        width: 25%;
+    }
 
 
 }
