@@ -29,7 +29,7 @@ function createCards(data) {
         card.setAttribute("class", "card");
         img.setAttribute("src", member.logo);
         img.setAttribute("alt", `${member.name} logo`);
-        img.setAttribute("width", "300px");
+        img.setAttribute("width", "200px");
         img.setAttribute("height","auto");
         img.setAttribute("loading", "lazy");
         url.setAttribute("href", member.url);
