@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Pollo Campero",
+        "address":"Carretera Panamericana, Santa Tecla",
+        "phone":"2273-6000",
+        "url":"https://www.campero.com/sv/inicio",
+        "logo":"../images/pollo-campero-logo.webp",
+        "membership-lvl":"silver"
+    },
+    {
+        "name": "Freund",
+        "address":"Boulevard Merliot, Calle a Comasagua",
+        "phone":"7882-9999",
+        "url":"https://www.freundferreteria.com/",
+        "logo":"../images/freund-logo.webp",
+        "membership-lvl":"bronze"
+    },
+    {
+        "name": "Diana",
+        "address":"Calle El Mirador y 87 Av. Norte",
+        "phone":"2277-1233",
+        "url":"https://www.productosdiana.com/",
+        "logo":"../images/diana-logo.webp",
+        "membership-lvl":"bronze"
+    },
+    {
+        "name": "Solucion Digital",
+        "address":"4a C. Pte, y 8a Av. Sur",
+        "phone":"7674-4444",
+        "url":"https://soluciondigital.com.sv/",
+        "logo":"../images/solucion-digital-logo.webp",
+        "membership-lvl":"gold"
+    },
+    {
+        "name": "Vidri",
+        "address":"Carretera Lib. 12S",
+        "phone":"2230-4976",
+        "url":"https://www.vidri.com.sv/",
+        "logo":"../images/vidri-logo.webp",
+        "membership-lvl":"silver"
+    },
+    {
+        "name": "BAC Credomatic",
+        "address":"2 Calle pte 2-6",
+        "phone":"7170-4222",
+        "url":"https://www.baccredomatic.com/es-sv",
+        "logo":"../images/baccredomatic-logo.webp",
+        "membership-lvl":"gold"
+    },
+    {
+        "name": "Burger King",
+        "address":"7 A Poniente, Santa Tecla",
+        "phone":"2228-8479",
+        "url":"https://www.baccredomatic.com/es-sv",
+        "logo":"../images/burger-king-logo.webp",
+        "membership-lvl":"bronze"
+    }   
+]
