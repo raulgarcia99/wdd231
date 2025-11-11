@@ -112,45 +112,90 @@ header {
 
 /*Main*/
 
-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    width: 100%;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
     font: var(--header-font);
     text-align: center;
+    margin: 10px;
 }
 
 h2 {
     font: var(--header-font);
-    font-size: 25px;
+    font-size: 20px;
     background-color: var(--accent1-color);
     color: var(--light-font);
     padding: 10px;
-    width: 90%;
     text-align: center;
-    margin: 0;
+    margin: 10px;
+    width: 80%;
 }
 
-.container {
-    background-color: var(--accent2-color);
-    width: 90%;
-    padding: 10px;
+.views {
     display: flex;
-    justify-content: center;
+    justify-items: center;
     margin-bottom: 20px;
-    text-align: justify;
+    gap: 10px;
 }
 
-.card {
-    background-color: var(--secondary-color);
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 3px solid var(--primary-color);
-    width: 90%;
+.view img {
+    width: 35px;
+    height: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    width: 100%;
+
+    .card {
+        background-color: var(--secondary-color);
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 3px solid var(--primary-color);
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .memberName {
+            display: none;
+        }
+
+        img {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        padding: 10px;
+        gap: 10px;
+
+        img {
+            display: none;
+        }
+
+        a {
+            display: none;
+        }
+
+        &:nth-child(odd) {
+			background-color: var(--secondary-color);
+		}
+    }
 }
 
 /*Footer*/

@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/cards.js" defer></script>
+    <script src="scripts/view.js" defer></script>
 </head>
 <body>
     <header> 
@@ -39,15 +40,14 @@
     </header>
     <main>
          <h1>Home</h1>
-        <section id="left-grid">
-            <h2>Events</h2>
-            <div class="container">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae saepe voluptate quis
-                    voluptatum natus dolor, iusto corrupti? Consequatur vero, unde totam nemo possimus
-                    consequuntur et! Facere laudantium aut minus ipsam!
-            </div>
-            <div class="cards">
-            </div>
+        
+        <h2>Business Directory</h2>
+        <div class="views">
+            <button class="view" id="grid"><img src="images/grid.svg" alt="Grid view button" loading="lazy"></button>
+            <button class="view" id="list"><img src="images/list.svg" alt="List view button" loading="lazy"></button>
+        </div>
+        <article class="grid">
+        </article>
         </section>
     </main>
     <footer>

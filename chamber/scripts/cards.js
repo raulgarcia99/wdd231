@@ -12,14 +12,16 @@ const fetchData = async() => {
 fetchData();
 
 function createCards(data) {
-    document.querySelector(".cards").innerHTML = "";
+    document.querySelector(".grid").innerHTML = "";
     data.forEach(member => {
         let card = document.createElement("section");
+        let name = document.createElement("p");
         let img = document.createElement("img");
         let address = document.createElement("p");
         let phone = document.createElement("p");
         let url = document.createElement("a");
 
+        name.innerHTML = member.name;
         address.innerHTML = member.address;
         phone.innerHTML = member.phone;
         url.innerHTML = member.url;
@@ -31,12 +33,14 @@ function createCards(data) {
         img.setAttribute("height","auto");
         img.setAttribute("loading", "lazy");
         url.setAttribute("href", member.url);
+        name.setAttribute("class", "memberName")
 
         card.appendChild(img);
+        card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(url);
 
-        document.querySelector(".cards").appendChild(card);
+        document.querySelector(".grid").appendChild(card);
     });
 }
