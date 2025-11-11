@@ -3,7 +3,7 @@
     --secondary-color: #dfdbdd;
     --accent1-color: #424349;
     --accent2-color: #a4f09d;
-    --header-font: 400 30px "Momo Trust Display", sans-serif;
+    --header-font: 400 25px "Momo Trust Display", sans-serif;
     --text-font: 400 20px "Fira Sans", sans-serif;
     --light-font: #ffffff;
     --dark-font: #000000;
@@ -31,18 +31,20 @@ header {
     height: auto;
 }
 
-/*#web-icon {
+#web-icon {
     position: absolute;
     top: 0.3rem;
     left: 1rem;
-}*/
+}
 
 .web-title {
     font: var(--header-font);
     color: var(--light-font);
     display: flex;
-    justify-content: center;
+    justify-self: center;
+    text-align: center;
     padding: 10px;
+    width: 75%;
 }
 
 .hamburger {
@@ -151,11 +153,25 @@ footer {
     background-color: var(--primary-color);
     color: var(--light-font);
     text-align: center;
+    justify-items: center;
+}
+
+.bold {
+    font-weight: bold;
+    color: var(--accent2-color);
+}
+
+.chamber-data {
+    display: flex;
+    text-align: center;
 }
 
 .socialmedia {
-    display: flex;
-    justify-content: center;
     gap: 20px;
     padding: 10px;
+}
+
+.dev-data {
+    display: flex;
+    text-align: center;
 }
