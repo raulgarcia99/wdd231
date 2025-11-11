@@ -145,6 +145,10 @@ h2 {
     text-align: justify;
 }
 
+.cards {
+    width: 90%;
+}
+
 .card {
     background-color: var(--secondary-color);
     padding: 15px;
