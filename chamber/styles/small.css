@@ -33,8 +33,9 @@ header {
 
 #web-icon {
     position: absolute;
-    top: 0.3rem;
-    left: 1rem;
+    top: 0.7rem;
+    left: 0.6rem;
+    width: 60px;
 }
 
 .web-title {
@@ -51,10 +52,10 @@ header {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 35px;
+    font-size: 40px;
     position: absolute;
-    top: 0.2rem;
-    right: 1rem;
+    top: 0.7rem;
+    right: 0.8rem;
 }
 
 .hamburger::before {
@@ -168,14 +169,14 @@ h2 {
             display: none;
         }
 
+        a {
+            font-size: 16px;
+        }
+
         img {
             margin-bottom: 10px;
         }
     }
-}
-
-.card p {
-    font-size: 15px;
 }
 
 .list {
@@ -191,6 +192,10 @@ h2 {
 
         img {
             display: none;
+        }
+
+        p {
+            font-size: 15px;
         }
 
         a {
