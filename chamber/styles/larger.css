@@ -58,7 +58,7 @@
 
     .list .card {
         grid-template-columns: 1fr 2fr 1fr 2fr;
-        padding: 15 px;
+        padding: 15px;
     }
 
     .list .card a {
