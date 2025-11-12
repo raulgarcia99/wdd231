@@ -153,8 +153,9 @@ h2 {
     grid-template-columns: 1fr;
     place-items: center;
     width: 100%;
+}
 
-    .card {
+.grid .card {
         background-color: var(--secondary-color);
         padding: 15px;
         margin-bottom: 15px;
@@ -164,53 +165,52 @@ h2 {
         flex-direction: column;
         align-items: center;
         justify-items: center;
+    }
 
-        .memberName {
+.grid .card .memberName {
             display: none;
         }
 
-        p {
-            text-align: center;
-            font-size: 16px;
-        }
+.grid .card p {
+    text-align: center;
+    font-size: 16px;
+}
 
-        a {
-            font-size: 16px;
-        }
+.grid .card a {
+    font-size: 16px;
+}
 
-        img {
-            margin-bottom: 10px;
-        }
-    }
+.grid .card img {
+    margin-bottom: 10px;
 }
 
 .list {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
 
-    .card {
+.list .card {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         padding: 10px;
         gap: 10px;
+}
 
-        img {
-            display: none;
-        }
+.list .card img {
+    display: none;
+}
 
-        p {
-            font-size: 16px;
-        }
+.list .card p {
+    font-size: 16px;
+}
 
-        a {
-            display: none;
-        }
+.list .card a {
+    display: none;
+}
 
-        &:nth-child(odd) {
-			background-color: var(--secondary-color);
-		}
-    }
+.list .card &:nth-child(odd) {
+    background-color: var(--secondary-color);
 }
 
 /*Footer*/
