@@ -209,7 +209,7 @@ h2 {
     display: none;
 }
 
-.list .card &:nth-child(odd) {
+.list .card:nth-child(odd) {
     background-color: var(--secondary-color);
 }
 
