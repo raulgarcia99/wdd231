@@ -84,6 +84,7 @@ header {
     gap: 10px;
     list-style-type: none;
     padding: 15px;
+    margin-bottom: 0;
 }
 
 .navigation ul li {
@@ -135,6 +136,8 @@ h2 {
     margin: 10px;
     width: 90%;
 }
+
+/*directory.html*/
 
 .views {
     display: flex;
@@ -212,6 +215,16 @@ h2 {
 
 .list .card:nth-child(odd) {
     background-color: var(--secondary-color);
+}
+
+/*Home.html*/
+
+.hero {
+    width: 100%;
+}
+
+#hero {
+    width: 100%;
 }
 
 /*Footer*/
