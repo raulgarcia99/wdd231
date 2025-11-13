@@ -3,7 +3,7 @@
     --secondary-color: #dfdbdd;
     --accent1-color: #424349;
     --accent2-color: #a4f09d;
-    --header-font: 400 25px "Momo Trust Display", sans-serif;
+    --header-font: 400 30px "Momo Trust Display", sans-serif;
     --text-font: 400 20px "Fira Sans", sans-serif;
     --light-font: #ffffff;
     --dark-font: #000000;
@@ -135,7 +135,6 @@ h2 {
     color: var(--light-font);
     padding: 10px;
     text-align: center;
-    margin: 10px;
     width: 90%;
 }
 
@@ -144,7 +143,7 @@ h2 {
 .views {
     display: flex;
     justify-items: center;
-    margin-bottom: 20px;
+    margin: 10px 0 20px 0;
     gap: 10px;
 }
 
@@ -219,14 +218,60 @@ h2 {
     background-color: var(--secondary-color);
 }
 
-/*Home.html*/
+/*index.html*/
 
 .hero {
-    width: 100%;
+    width: 100%;;
+    position: relative;
 }
 
 #hero {
     width: 100%;
+}
+
+.home {
+    position: absolute;
+    top: 1rem;
+    left: 35%;
+    background-color: var(--secondary-color);
+    width: 30%;
+    padding: 10px;
+    color: var(--dark-font);
+}
+
+.cta {
+    background-color: var(--primary-color);
+    color: var(--light-font);
+    border: 2px solid var(--accent1-color);
+    border-radius: 5px;
+    padding: 15px;
+    position: absolute;
+    bottom: 2rem;
+    right: 0.7rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cta:hover{
+    background-color: var(--accent2-color);
+    color: var(--dark-font);
+    border-color: var(--primary-color);
+    box-shadow: 10px 10px 10px var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.box p {
+    background-color: var(--accent2-color);
+    text-align: justify;
+    width: 90%;
+    padding: 10px;
 }
 
 /*Footer*/

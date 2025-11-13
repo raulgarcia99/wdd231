@@ -44,6 +44,8 @@
         width: 97%;
     }
 
+    /*directory.html*/
+
     .grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -68,5 +70,22 @@
     .list .card p {
         font-size: 20px;
         padding-left: 10px;
+    }
+
+    /*index.html*/
+
+    .cta {
+        font-size: 35px;
+        bottom: 4rem;
+        right: 2rem;
+    }
+
+    .home {
+        left: 40%;
+        width: 20%;
+    }
+
+    .box p {
+        width: 97%;
     }
 }

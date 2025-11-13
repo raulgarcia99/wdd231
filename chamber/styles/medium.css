@@ -1,4 +1,6 @@
 @media (min-width: 600px){
+
+    /*Header*/
     
     #web-icon {
     top: 0.2rem;
@@ -15,4 +17,20 @@
         top: 0.2rem;
         right: 0.5rem;
     }
+
+    /*Main*/
+
+    /*index.html*/
+
+    .cta {
+        font-size: 25px;
+        bottom: 3rem;
+        right: 1rem;
+    }
+
+    .home {
+        left: 38.5%;
+        width: 25%;
+    }
+
 }
