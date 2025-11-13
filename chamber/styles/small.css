@@ -72,6 +72,7 @@ header {
 .navigation {
     background-color: var(--secondary-color);
     display: none;
+    color: var(--dark-font);
 }
 
 .navigation.show {
