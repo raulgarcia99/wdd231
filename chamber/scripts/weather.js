@@ -12,7 +12,6 @@ async function apiFetch() {
     const response = await fetch(myUrl);
     if (response.ok) {
         const data = await response.json();
-        console.log(data);
         displayResults(data);
     } else {
         throw Error(await response.text());
@@ -25,7 +24,6 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults (data) {
-    console.log("Hey, it worked")
     myDescription.innerHTML = data.weather[0].description
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     myGraphic.setAttribute("src", iconsrc)
