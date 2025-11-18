@@ -258,21 +258,25 @@ h2 {
     border-color: var(--primary-color);
     box-shadow: 10px 10px 10px var(--primary-color);
     transition: all 0.3s ease;
-}
+}   
 
 .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border: 1px solid var(--accent1-color);
+    background-color: var(--accent2-color);
+    text-align: center;
+    width: 90%;
     margin-bottom: 10px;
 }
 
-.box p {
-    background-color: var(--accent2-color);
-    text-align: justify;
-    width: 90%;
-    padding: 10px;
+.box h2 {
+    width: 100%;
 }
+
+#description {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
 
 /*Footer*/
 
