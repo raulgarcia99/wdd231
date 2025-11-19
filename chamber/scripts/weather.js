@@ -1,4 +1,5 @@
 const myGraphic = document.querySelector("#graphic");
+const myCity = document.querySelector("#city");
 const myDescription = document.querySelector("#description");
 const myTemp = document.querySelector("#temperature");
 
@@ -12,6 +13,7 @@ async function apiFetch() {
     const response = await fetch(myUrl);
     if (response.ok) {
         const data = await response.json();
+        console.log(data)
         displayResults(data);
     } else {
         throw Error(await response.text());
@@ -24,9 +26,10 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults (data) {
-    myDescription.innerHTML = data.weather[0].description
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     myGraphic.setAttribute("src", iconsrc)
     myGraphic.setAttribute("alt", data.weather[0].description)
+    myCity.innerHTML= data.name 
+    myDescription.innerHTML = data.weather[0].description
     myTemp.innerHTML = `${data.main.temp}&deg;C`
 }
