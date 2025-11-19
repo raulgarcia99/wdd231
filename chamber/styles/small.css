@@ -274,6 +274,10 @@ h2 {
     margin-bottom: 10px;
 }
 
+.container {
+    justify-items: center;
+}
+
 #description {
     text-transform: capitalize;
     margin-bottom: 10px;
