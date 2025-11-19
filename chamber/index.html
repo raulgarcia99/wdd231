@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
 </head>
 <body>
     <header> 
@@ -48,24 +49,23 @@
             <h1 class="home">Home</h1>
             <button class="cta">Join us now!</button>
         </div>
-        <section class="box">
-            <h2>Events</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, quibusdam vero rem molestiae,
-                asperiores vitae aut iusto necessitatibus sunt magni aspernatur atque. Laudantium, blanditiis aut
-                eligendi accusamus possimus temporibus incidunt.</p>
-        </section>
-        <section class="box">
-            <h2>Weather</h2>
-            <img id="graphic" src="" alt="">
-            <p id="description"></p>
-            <p id="temperature"></p>
-        </section>
-        <section class="box">
-            <h2>Our members spotlights</h2>
-            <div class="spotlights">
-
-            </div>
-        </section>
+        <div class="container">
+            <section id="events" class="box">
+                <h2>Events</h2>
+                <p>No events at the moment, check later for more updates</p>
+            </section>
+            <section id="weather" class="box">
+                <h2>Weather</h2>
+                <img id="graphic" src="" alt="">
+                <p id="description"></p>
+                <p id="temperature"></p>
+            </section>
+            <section id="members" class="box">
+                <h2>Our members spotlights</h2>
+                <div id="spotlights">
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="chamber-data">

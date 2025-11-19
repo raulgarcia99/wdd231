@@ -1,46 +1,59 @@
 const fetchData = async() => {
-    try{
-        const response = await fetch("data/members.json");
-        const data = await response.json();
-        console.log(data);
-        createCards(data);
-    } catch (error) {
-        console.error("Error fetching data", error);
+  try {
+    const response = await fetch("data/members.json");
+    const members = await response.json();
+
+    const spotlightMembers = members.filter(member =>
+      member.membership === "Gold" || member.membership === "Silver"
+    );
+
+    const randomCount = Math.floor(Math.random() * 2) + 2;
+    const selectedMembers = [];
+
+    while (selectedMembers.length < randomCount && spotlightMembers.length > 0) {
+      const randomIndex = Math.floor(Math.random() * spotlightMembers.length);
+      selectedMembers.push(spotlightMembers.splice(randomIndex, 1)[0]);
     }
-}
 
-fetchData();
+    const container = document.getElementById("spotlights");
+    container.innerHTML = "";
 
-function createCards(data) {
-    document.querySelector(".grid").innerHTML = "";
-    data.forEach(member => {
-        let card = document.createElement("section");
+    selectedMembers.forEach(member => {
+        let spotlight = document.createElement("div");
         let name = document.createElement("p");
         let img = document.createElement("img");
         let address = document.createElement("p");
         let phone = document.createElement("p");
         let url = document.createElement("a");
+        let memberLvl = document.createElement("p")
 
         name.innerHTML = member.name;
         address.innerHTML = member.address;
         phone.innerHTML = member.phone;
         url.innerHTML = member.url;
+        memberLvl.innerHTML = `${member.membership} Member`;
+        
 
-        card.setAttribute("class", "card");
+        spotlight.setAttribute("class", "spotlight");
         img.setAttribute("src", member.logo);
         img.setAttribute("alt", `${member.name} logo`);
         img.setAttribute("width", "200px");
         img.setAttribute("height","auto");
         img.setAttribute("loading", "lazy");
         url.setAttribute("href", member.url);
-        name.setAttribute("class", "memberName")
 
-        card.appendChild(img);
-        card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(url);
+        spotlight.appendChild(img);
+        spotlight.appendChild(name);
+        spotlight.appendChild(address);
+        spotlight.appendChild(phone);
+        spotlight.appendChild(url);
+        spotlight.appendChild(memberLvl)
 
-        document.querySelector(".grid").appendChild(card);
+        document.querySelector("#spotlights").appendChild(spotlight);
     });
+  } catch (error) {
+    console.error("Error loading spotlights:", error);
+  }
 }
+
+fetchData();

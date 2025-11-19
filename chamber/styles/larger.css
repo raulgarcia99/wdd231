@@ -88,4 +88,29 @@
     .box {
         width: 97%;
     }
+    
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 0;
+    }
+
+    #spotlights {
+    display: flex;
+    justify-content:space-around ;
+    align-items: end;
+    }
+
+    #events {
+        grid-column: 1/2;
+    }
+
+    #weather {
+        grid-column: 2/3;
+    }
+
+    #members {
+        grid-column: 1/3;
+    }
+
 }

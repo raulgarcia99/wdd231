@@ -266,15 +266,21 @@ h2 {
     text-align: center;
     width: 90%;
     margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .box h2 {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 #description {
     text-transform: capitalize;
     margin-bottom: 10px;
+}
+
+.spotlight  {
+    margin-bottom: 15px;
 }
 
 
