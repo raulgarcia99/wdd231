@@ -138,6 +138,13 @@ h2 {
     width: 90%;
 }
 
+h3 {
+    font: var(--header-font);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
 /*directory.html*/
 
 .views {
@@ -285,6 +292,19 @@ h2 {
 
 .spotlight  {
     margin-bottom: 15px;
+}
+
+/*Join.html*/
+
+
+.more-space {
+    display: block;
+    margin-top: 1rem;
+}
+
+input[type="radio"] {
+    margin: 0;
+    padding: 0;
 }
 
 
