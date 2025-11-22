@@ -296,6 +296,31 @@ h3 {
 
 /*Join.html*/
 
+.join-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.join-form form {
+        background-color: var(--accent2-color);
+        margin-bottom: 1rem;
+    }
+
+.join-form h2 {
+    width: 100%;
+}
+
+.join-form h3 {
+    text-align: left;
+}
+
+.left {
+    text-align: left;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 .more-space {
     display: block;
@@ -306,7 +331,6 @@ input[type="radio"] {
     margin: 0;
     padding: 0;
 }
-
 
 /*Footer*/
 

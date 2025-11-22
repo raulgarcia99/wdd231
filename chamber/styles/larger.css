@@ -117,4 +117,12 @@
         width: 100%;
     }
 
+    /*join.html*/
+
+    .join-form {
+    width: 45%;
+    align-self: flex-start;
+    margin-left: 1rem;
+}
+
 }
