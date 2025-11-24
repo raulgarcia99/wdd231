@@ -339,6 +339,14 @@ h3 {
     margin-top: 1rem;
 }
 
+input:required, input:invalid {
+    border-left: 10px solid #e90000;
+}
+
+input:valid {
+    border-color: #0a7a00;
+}
+
 input[type="radio"] {
     margin: 0;
     padding: 0;
@@ -381,6 +389,47 @@ input[type="radio"] {
 }
 
 .button:hover{
+    background-color: var(--secondary-color);
+    color: var(--dark-font);
+    border-color: var(--primary-color);
+    transition: all 0.1s ease;
+}
+
+.myModal {
+    width: 400px;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.myModal p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.myModal::backdrop {
+    background: rgba(0,0,0,0.5);
+}
+
+.title-card {
+    font: var(--header-font);
+    font-size: 20px;
+    display: flex;
+    justify-self: center;
+}
+
+.closeModal {
+    background-color: var(--primary-color);
+    color: var(--light-font);
+    border: 2px solid var(--accent1-color);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-self: right;
+}
+
+.closeModal:hover{
     background-color: var(--secondary-color);
     color: var(--dark-font);
     border-color: var(--primary-color);

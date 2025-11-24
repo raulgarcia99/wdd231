@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/modals.js" defer></script>
 </head>
 <body>
     <header> 
@@ -62,9 +63,6 @@
                         <label for="orgName" class="more-space">Organization Name<br>
                             <input type="text" name="orgName" id="orgName" placeholder="Smiley Cola" autocomplete="organization" required>
                         </label>
-                        <label for="phone" class="more-space">Phone Number<br>
-                            <input type="tel" name="tel" id="phone" placeholder="1234-5678" autocomplete="tel" required>
-                        </label>
                         <h3>Membership level</h3>
                         <label for="np" class="more-space"><input type="radio" name="membership" id="np" required>
                             Non Profit (NP) - Free ($0.00)
@@ -77,7 +75,14 @@
                         </label>
                         <label for="gold" class="more-space"><input type="radio" name="membership" id="gold" required>
                             Gold - $19.99
-                        </label>
+                        </label><br>
+                        <label for="description">
+                            Organization Description:<br>
+                            <textarea id="orgDescription" name="orgDescription" title="Business or Organization Description" 
+                            rows="5" placeholder="Describe your organization here..."></textarea>
+                        </label><br>
+                        <input type="hidden" name="timestamp" id="timestamp">
+  
                         <button class="button submit" type="submit">Subscribe Me</button>
                     </div>
                 </form>
@@ -87,15 +92,35 @@
                 <h2>Membership Levels</h2>
                 <section class="member-card">
                     <h3>Non Profit Membership</h3>
-                    <button class="button modal">View more details</button>
+                    <dialog class="myModal" id="npModal">
+                        <span class="title-card">Non Profit Membership</span>
+                        <p>Subcribe to our webpage at no cost, you will receive materials to have
+                            finantial education, space for one event published on our website per
+                            month and you can receive news about important information about our town.
+                        </p>
+                        <p>Cost: $0.00</p>
+                        <button class="closeModal" id="npClose">Close</button>
+                    </dialog>
+                    <button class="button modal" id="npButton">View more details</button>
                 </section>
                 <section class="member-card">
                     <h3>Bronze Membership</h3>
-                    <button class="button modal">View more details</button>
+                    <dialog class="myModal" id="bronzeModal">
+                        <span class="title-card">Bronze Membership</span>
+                        <p>Subcribe to our webpage for a little monthly fee, you will receive materials to have
+                            finantial education, space for 2 events published on our website per month, receive news
+                            about important information about our town, appear on our website directory so people
+                            visiting our site can see your contact information, and receive support from our part on
+                            your events.
+                        </p>
+                        <p>Cost: $9.99</p>
+                        <button class="closeModal" id="bronzeClose">Close</button>
+                    </dialog>
+                    <button class="button modal" id="bronzeButton">View more details</button>
                 </section>
-                <section class="member-card">
+                <section class="member-card" id="silver">
                     <h3>Silver Membership</h3>
-                    <button class="button modal">View more details</button>
+                    <button class="button modal" id="gold">View more details</button>
                 </section>
                 <section class="member-card">
                     <h3>Gold Membership</h3>
