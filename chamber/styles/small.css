@@ -9,6 +9,18 @@
     --dark-font: #000000;
 }
 
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 * {
     box-sizing: border-box;
     font: var(--text-font);
@@ -130,7 +142,7 @@ h1 {
 
 h2 {
     font: var(--header-font);
-    font-size: 20px;
+    font-size: 22px;
     background-color: var(--accent1-color);
     color: var(--light-font);
     padding: 10px;
@@ -141,7 +153,7 @@ h2 {
 h3 {
     font: var(--header-font);
     text-align: center;
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 20px;
 }
 
@@ -299,7 +311,7 @@ h3 {
 .join-form {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
 }
 
 .join-form form {
@@ -331,6 +343,50 @@ input[type="radio"] {
     margin: 0;
     padding: 0;
 }
+
+.join-content {
+    width: 90%;
+}
+
+.membership {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+    animation: slideIn 2s ease;
+}
+
+.membership h2 {
+    width: 100%;
+}
+
+.member-card {
+    background-color: var(--accent2-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: var(--light-font);
+    border: 2px solid var(--accent1-color);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.button:hover{
+    background-color: var(--secondary-color);
+    color: var(--dark-font);
+    border-color: var(--primary-color);
+    transition: all 0.1s ease;
+}
+
 
 /*Footer*/
 

@@ -119,10 +119,18 @@
 
     /*join.html*/
 
-    .join-form {
-    width: 45%;
-    align-self: flex-start;
-    margin-left: 1rem;
-}
+    .join-content {
+    width: 97%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    }
 
+    .join-form {
+    width: 100%;
+    }   
+
+    .membership {
+        width: 100%;
+    }
 }
