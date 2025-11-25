@@ -52,8 +52,9 @@
                             <input type="text" name="lname" id="lname" placeholder="Doe" autocomplete="family-name" required>
                         </label>
                         <label for="orgTitle" class="more-space">Organizational Title<br>
-                            <input type="text" name="orgTitle" id="orgTitle" placeholder="Manager" autocomplete="organization-title" required
-                            pattern="^[A-Za-z\s-]{7,}$">
+                            <input type="text" name="orgTitle" id="orgTitle" placeholder="Manager" autocomplete="organization-title"
+                            pattern="^[A-Za-z \-]{7,}$" title="At least 7 characters, use only alpha characters, spaces or hyphens"
+                            required>
                         </label>
                         <label for="email" class="more-space">Email<br>
                             <input type="email" name="email" id="email" placeholder="example@email.com" autocomplete="email" required>
