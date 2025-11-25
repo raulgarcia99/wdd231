@@ -62,7 +62,12 @@
                         </label>
                         <label for="orgName" class="more-space">Organization Name<br>
                             <input type="text" name="orgName" id="orgName" placeholder="Smiley Cola" autocomplete="organization" required>
-                        </label>
+                        </label><br>
+                        <label for="orgdescription">
+                            Organization Description:<br>
+                            <textarea id="orgDescription" name="orgDescription" title="Business or Organization Description" 
+                            rows="5" placeholder="Describe your organization here..."></textarea>
+                        </label><br>
                         <h3>Membership level</h3>
                         <label for="np" class="more-space"><input type="radio" name="membership" id="np" required>
                             Non Profit (NP) - Free ($0.00)
@@ -76,11 +81,6 @@
                         <label for="gold" class="more-space"><input type="radio" name="membership" id="gold" required>
                             Gold - $19.99
                         </label><br>
-                        <label for="description">
-                            Organization Description:<br>
-                            <textarea id="orgDescription" name="orgDescription" title="Business or Organization Description" 
-                            rows="5" placeholder="Describe your organization here..."></textarea>
-                        </label><br>
                         <input type="hidden" name="timestamp" id="timestamp">
   
                         <button class="button submit" type="submit">Subscribe Me</button>
@@ -90,6 +90,7 @@
 
             <div class="membership">
                 <h2>Membership Levels</h2>
+
                 <section class="member-card">
                     <h3>Non Profit Membership</h3>
                     <dialog class="myModal" id="npModal">
@@ -103,6 +104,7 @@
                     </dialog>
                     <button class="button modal" id="npButton">View more details</button>
                 </section>
+
                 <section class="member-card">
                     <h3>Bronze Membership</h3>
                     <dialog class="myModal" id="bronzeModal">
@@ -118,13 +120,37 @@
                     </dialog>
                     <button class="button modal" id="bronzeButton">View more details</button>
                 </section>
-                <section class="member-card" id="silver">
+
+                <section class="member-card">
                     <h3>Silver Membership</h3>
-                    <button class="button modal" id="gold">View more details</button>
+                    <dialog class="myModal" id="silverModal">
+                        <span class="title-card">Silver Membership</span>
+                        <p>Subcribe to our webpage and receive materials to have finantial education, space for 4 events
+                            published on our website per month, receive news about important information about our town, 
+                            appear on our website directory so people visiting our site can see your contact information, 
+                            you can appear on our home page for more visibility, and receive higher priority support from our part
+                            on your events.
+                        </p>
+                        <p>Cost: $14.99</p>
+                        <button class="closeModal" id="silverClose">Close</button>
+                    </dialog>
+                    <button class="button modal" id="silverButton">View more details</button>
                 </section>
+
                 <section class="member-card">
                     <h3>Gold Membership</h3>
-                    <button class="button modal">View more details</button>
+                    <dialog class="myModal" id="goldModal">
+                        <span class="title-card">Gold Membership</span>
+                        <p>Subcribe to our webpage and receive materials to have finantial education, space for unlimited events
+                            published on our website per month, receive news about important information about our town, 
+                            appear on our website directory and home page so people visiting our site can see your contact
+                            information with more visibility, and receive the highest priority support from our part on
+                            your events.
+                        </p>
+                        <p>Cost: $19.99</p>
+                        <button class="closeModal" id="goldClose">Close</button>
+                    </dialog>
+                    <button class="button modal" id="goldButton">View more details</button>
                 </section>
             </div>
         </div>

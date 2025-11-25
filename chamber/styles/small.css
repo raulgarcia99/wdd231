@@ -400,6 +400,7 @@ input[type="radio"] {
     border: none;
     border-radius: 8px;
     padding: 20px;
+    box-shadow: 0 0 20px var(--primary-color)
 }
 
 .myModal p {
@@ -434,6 +435,12 @@ input[type="radio"] {
     color: var(--dark-font);
     border-color: var(--primary-color);
     transition: all 0.1s ease;
+}
+
+/*thankyou.html*/
+
+.centered-text {
+    text-align: center;
 }
 
 
