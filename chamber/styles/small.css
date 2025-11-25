@@ -443,6 +443,22 @@ input[type="radio"] {
     text-align: center;
 }
 
+#formData {
+    width: 90%;
+    padding: 20px;
+    border: 2px solid var(--accent1-color);
+    margin-bottom: 1rem;
+    background-color: var(--accent2-color);
+}
+
+#formData p {
+    margin-top: 10px;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
 
 /*Footer*/
 

@@ -45,3 +45,8 @@ goldButton.addEventListener("click", () => {
 goldClose.addEventListener("click", () => {
     goldModal.close();
 });
+
+function addTimestamp() {
+    const now = new Date();
+    document.querySelector("#timestamp").value = now.toLocaleString("en-US")
+}

@@ -133,4 +133,11 @@
     .membership {
         width: 100%;
     }
+
+    /*thankyou.html*/
+    #formData {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 97%;
+    }
 }

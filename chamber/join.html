@@ -42,7 +42,7 @@
         <h1>Join</h1>
         <div class="join-content">
             <div class="join-form">
-                <form method="get" action="thankyou.html">
+                <form method="get" action="thankyou.html" onsubmit="addTimestamp()">
                     <h2>Membership Application Form</h2>
                     <div class="left">
                         <label for="fname" class="more-space">First Name<br>
@@ -52,7 +52,8 @@
                             <input type="text" name="lname" id="lname" placeholder="Doe" autocomplete="family-name" required>
                         </label>
                         <label for="orgTitle" class="more-space">Organizational Title<br>
-                            <input type="text" name="orgTitle" id="orgTitle" placeholder="Manager" autocomplete="organization-title" required>
+                            <input type="text" name="orgTitle" id="orgTitle" placeholder="Manager" autocomplete="organization-title" required
+                            pattern="^[A-Za-z\s-]{7,}$">
                         </label>
                         <label for="email" class="more-space">Email<br>
                             <input type="email" name="email" id="email" placeholder="example@email.com" autocomplete="email" required>
@@ -63,22 +64,22 @@
                         <label for="orgName" class="more-space">Organization Name<br>
                             <input type="text" name="orgName" id="orgName" placeholder="Smiley Cola" autocomplete="organization" required>
                         </label><br>
-                        <label for="orgdescription">
+                        <label for="orgDescription">
                             Organization Description:<br>
                             <textarea id="orgDescription" name="orgDescription" title="Business or Organization Description" 
                             rows="5" placeholder="Describe your organization here..."></textarea>
                         </label><br>
                         <h3>Membership level</h3>
-                        <label for="np" class="more-space"><input type="radio" name="membership" id="np" required>
+                        <label for="np" class="more-space"><input type="radio" name="membership" id="np" value="Non Profit" required>
                             Non Profit (NP) - Free ($0.00)
                         </label>
-                        <label for="bronze" class="more-space"><input type="radio" name="membership" id="bronze" required>
+                        <label for="bronze" class="more-space"><input type="radio" name="membership" id="bronze" value="Bronze" required>
                             Bronze - $9.99
                         </label>
-                        <label for="silver" class="more-space"><input type="radio" name="membership" id="silver" required>
+                        <label for="silver" class="more-space"><input type="radio" name="membership" id="silver" value="Silver" required>
                             Silver - $14.99
                         </label>
-                        <label for="gold" class="more-space"><input type="radio" name="membership" id="gold" required>
+                        <label for="gold" class="more-space"><input type="radio" name="membership" id="gold" value="Gold" required>
                             Gold - $19.99
                         </label><br>
                         <input type="hidden" name="timestamp" id="timestamp">
