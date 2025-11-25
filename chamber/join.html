@@ -46,24 +46,29 @@
                     <h2>Membership Application Form</h2>
                     <div class="left">
                         <label for="fname" class="more-space">First Name<br>
-                            <input type="text" name="fname" id="fname" placeholder="John" autocomplete="given-name" required>
+                            <input type="text" name="fname" id="fname" placeholder="John" autocomplete="given-name"
+                            title="Enter your first name" required>
                         </label>
                         <label for="lname" class="more-space">Last Name<br>
-                            <input type="text" name="lname" id="lname" placeholder="Doe" autocomplete="family-name" required>
+                            <input type="text" name="lname" id="lname" placeholder="Doe" autocomplete="family-name" 
+                            title="Enter your last name" required>
                         </label>
                         <label for="orgTitle" class="more-space">Organizational Title<br>
                             <input type="text" name="orgTitle" id="orgTitle" placeholder="Manager" autocomplete="organization-title"
-                            pattern="^[A-Za-z \-]{7,}$" title="At least 7 characters, use only alpha characters, spaces or hyphens"
-                            required>
+                            pattern="^[A-Za-z \-]{7,}$" title="Enter your organization title with at least 7 characters, 
+                            use only alpha characters, spaces or hyphens" required>
                         </label>
                         <label for="email" class="more-space">Email<br>
-                            <input type="email" name="email" id="email" placeholder="example@email.com" autocomplete="email" required>
+                            <input type="email" name="email" id="email" placeholder="example@email.com"
+                            autocomplete="email" title="Enter your email address" required>
                         </label>
                         <label for="tel" class="more-space">Phone Number<br>
-                            <input type="tel" name="tel" id="tel" placeholder="1234-5678" autocomplete="tel" required>
+                            <input type="tel" name="tel" id="tel" placeholder="1234-5678" autocomplete="tel" 
+                            title="Enter your phone number" required>
                         </label>
                         <label for="orgName" class="more-space">Organization Name<br>
-                            <input type="text" name="orgName" id="orgName" placeholder="Smiley Cola" autocomplete="organization" required>
+                            <input type="text" name="orgName" id="orgName" placeholder="Smiley Cola" 
+                            title="Enter your organization name" autocomplete="organization" required>
                         </label><br>
                         <label for="orgDescription">
                             Organization Description:<br>
@@ -104,7 +109,7 @@
                         <p>Cost: $0.00</p>
                         <button class="closeModal" id="npClose">Close</button>
                     </dialog>
-                    <button class="button modal" id="npButton">View more details</button>
+                    <button class="button" id="npButton">View more details</button>
                 </section>
 
                 <section class="member-card">
@@ -120,7 +125,7 @@
                         <p>Cost: $9.99</p>
                         <button class="closeModal" id="bronzeClose">Close</button>
                     </dialog>
-                    <button class="button modal" id="bronzeButton">View more details</button>
+                    <button class="button" id="bronzeButton">View more details</button>
                 </section>
 
                 <section class="member-card">
@@ -136,7 +141,7 @@
                         <p>Cost: $14.99</p>
                         <button class="closeModal" id="silverClose">Close</button>
                     </dialog>
-                    <button class="button modal" id="silverButton">View more details</button>
+                    <button class="button" id="silverButton">View more details</button>
                 </section>
 
                 <section class="member-card">
@@ -152,7 +157,7 @@
                         <p>Cost: $19.99</p>
                         <button class="closeModal" id="goldClose">Close</button>
                     </dialog>
-                    <button class="button modal" id="goldButton">View more details</button>
+                    <button class="button" id="goldButton">View more details</button>
                 </section>
             </div>
         </div>
