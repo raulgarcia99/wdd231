@@ -1,3 +1,6 @@
+const now = new Date();
+document.querySelector("#timestamp").value = now.toLocaleString("en-US")
+
 const npButton = document.querySelector("#npButton");
 const npModal = document.querySelector("#npModal");
 const npClose = document.querySelector("#npClose");
@@ -45,8 +48,3 @@ goldButton.addEventListener("click", () => {
 goldClose.addEventListener("click", () => {
     goldModal.close();
 });
-
-function addTimestamp() {
-    const now = new Date();
-    document.querySelector("#timestamp").value = now.toLocaleString("en-US")
-}
