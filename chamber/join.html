@@ -42,7 +42,7 @@
         <h1>Join</h1>
         <div class="join-content">
             <div class="join-form">
-                <form method="get" action="thankyou.html">
+                <form method="get" action="thankyou.html" onsubmit="setTimestamp()">
                     <h2>Membership Application Form</h2>
                     <div class="left">
                         <label for="fname" class="more-space">First Name<br>
@@ -98,7 +98,7 @@
             <div class="membership">
                 <h2>Membership Levels</h2>
 
-                <section class="member-card">
+                <section class="member-card" id="npCard">
                     <h3>Non Profit Membership</h3>
                     <dialog class="myModal" id="npModal">
                         <span class="title-card">Non Profit Membership</span>
@@ -112,7 +112,7 @@
                     <button class="button" id="npButton">View more details</button>
                 </section>
 
-                <section class="member-card">
+                <section class="member-card" id="bronzeCard">
                     <h3>Bronze Membership</h3>
                     <dialog class="myModal" id="bronzeModal">
                         <span class="title-card">Bronze Membership</span>
@@ -128,7 +128,7 @@
                     <button class="button" id="bronzeButton">View more details</button>
                 </section>
 
-                <section class="member-card">
+                <section class="member-card" id="silverCard">
                     <h3>Silver Membership</h3>
                     <dialog class="myModal" id="silverModal">
                         <span class="title-card">Silver Membership</span>
@@ -144,7 +144,7 @@
                     <button class="button" id="silverButton">View more details</button>
                 </section>
 
-                <section class="member-card">
+                <section class="member-card" id="goldCard">
                     <h3>Gold Membership</h3>
                     <dialog class="myModal" id="goldModal">
                         <span class="title-card">Gold Membership</span>
