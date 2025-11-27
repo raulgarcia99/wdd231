@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #45154d;
+    --secondary-color: #FDE85E;
+    --accent1-color: #060049;
+    --accent2-color: #EEABFF;
+    --header-font: 400 30px "Bevan", serif;
+    --text-font: 400 22px "Metrophobic", sans-serif;
+    --light-font: #FDE85E;
+    --dark-font: #060049;
+}
+
+* {
+    box-sizing: border-box;
+    font: var(--text-font);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+h1 {
+    font: var(--header-font);
+    color: var(--light-font);
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 1rem;
+    background-color: var(--accent2-color);
+}
+
+h2 {
+    margin: 25px 0 10px;
+    font: var(--header-font);
+    color: var(--dark-font);
+    font-size: 25px;
+}
+
+p {
+    margin: 5px;
+}
+
+section {
+    margin: 15px 0 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.color {
+    padding: 0 10px;
+}
+
+.dark {
+    color: var(--dark-font);
+}
+
+.light {
+    color: var(--light-font);
+}
+
+#primaryColor {
+    background-color: var(--primary-color);
+}
+
+#secondaryColor {
+    background-color: var(--secondary-color);
+}
+
+#accent1 {
+    background-color: var(--accent1-color);
+}
+
+#accent2 {
+    background-color: var(--accent2-color);
+    border: 1px solid var(--primary-color);
+}
+
+#header-font {
+    font: var(--header-font);
+    font-size: 22px;
+}
+
+#text-font {
+    font-size: 25px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-font);
+    text-align: center;
+    padding: 1rem 10px;
+}
