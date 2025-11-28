@@ -89,9 +89,46 @@ section {
     font-size: 25px;
 }
 
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex section {
+    margin: 10px;
+}
+
+.wireframe {
+    margin: 10px;
+    box-shadow: 5px 5px 7.5px;
+}
+
+#mobile {
+    height: 320px;
+    width: auto;
+}
+
+#desktop {
+    width: 320px;
+    height: auto;
+}
+
 footer {
     background-color: var(--primary-color);
     color: var(--light-font);
     text-align: center;
     padding: 1rem 10px;
+}
+
+@media (min-width: 720px) {
+
+    #mobile {
+        height: 480px;
+        width: auto;
+    }
+
+    #desktop {
+        width: 480px;
+        height: auto;
+    }
 }
