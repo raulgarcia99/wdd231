@@ -474,6 +474,15 @@ input[type="radio"] {
     font-weight: bolder;
 }
 
+/*discover.html*/
+
+.places {
+    margin: 1rem 0;
+}
+
+.places .card {
+    height: 400px;
+}
 
 /*Footer*/
 
