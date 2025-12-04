@@ -481,8 +481,47 @@ input[type="radio"] {
 }
 
 .places .card {
-    height: 400px;
+    height: 450px;
+    display: grid; 
+    grid-template-areas:
+    "name"
+    "address"
+    "image"
+    "description"
+    "button";
 }
+
+.place-name {
+    grid-area: name;
+    color: var(--dark-font);
+    background: none;
+    font-size: 25px;
+    padding: 0;
+}
+
+.places .card figure {
+    grid-area: image;
+    margin: 0;
+}
+
+.place-address {
+    grid-area: address;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+}
+
+.place-description {
+    grid-area: description;
+    font-size: 18px;
+}
+
+.places .card .button {
+    grid-area: button;
+    font-size: 16px;
+}
+
+
 
 /*Footer*/
 

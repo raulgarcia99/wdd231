@@ -5,33 +5,40 @@ console.log(places);
 displayCards(places)
 
 function displayCards (data) {
-    document.querySelector(".grid").innerHTML = "";
+    document.querySelector(".places").innerHTML = "";
     data.forEach(place => {
         let card = document.createElement("section");
-        let name = document.createElement("p");
+        let name = document.createElement("h2");
+        let figure = document.createElement("figure")
         let img = document.createElement("img");
-        let address = document.createElement("p");
+        let address = document.createElement("address");
         let description = document.createElement("p");
-        let cost = document.createElement("p");
+        let button = document.createElement("button")
 
         name.innerHTML = place.name;
         address.innerHTML = place.address;
         description.innerHTML = place.description;
-        cost.innerHTML = `Entry cost: ${place.entry_cost}`;
+        button.innerHTML = "Learn more"
 
         card.setAttribute("class", "card");
         img.setAttribute("src", place.img);
         img.setAttribute("alt", `${place.name}`);
         img.setAttribute("width", "300px");
         img.setAttribute("height","200px");
-        img.setAttribute("loading", "lazy");
+        img.setAttribute("loading", "lazy");  
+        name.setAttribute("class", "place-name");
+        address.setAttribute("class", "place-address");
+        description.setAttribute("class", "place-description");
+        button.setAttribute("class", "button");
+        button.setAttribute("with", "100px");
 
         card.appendChild(name);
-        card.appendChild(img);
+        card.appendChild(figure);
+        figure.appendChild(img);
         card.appendChild(address);
         card.appendChild(description);
-        card.appendChild(cost);
+        card.appendChild(button);
 
-        document.querySelector(".grid").appendChild(card);
+        document.querySelector(".places").appendChild(card);
     });
 }
