@@ -489,6 +489,7 @@ input[type="radio"] {
     "image"
     "description"
     "button";
+    padding: 10px;
 }
 
 .place-name {
