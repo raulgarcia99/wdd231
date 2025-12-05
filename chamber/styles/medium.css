@@ -36,7 +36,7 @@
     /*discover.html*/
 
     .places .card {
-    height: 280px;
+    height: 300px;
     grid-template-areas:
     "name name"
     "image address"
@@ -56,9 +56,9 @@
     grid-area: address;
     }
 
-    .place-description {
+    .places .card .place-description {
     grid-area: description;
-    font-size: 40px;
+    font-size: 18px;
     }
 
     .places .card .button {

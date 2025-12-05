@@ -514,7 +514,7 @@ input[type="radio"] {
 
 .places .card .place-description {
     grid-area: description;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .places .card .button {
