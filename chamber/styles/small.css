@@ -512,9 +512,9 @@ input[type="radio"] {
     text-align: center;
 }
 
-.place-description {
+.places .card .place-description {
     grid-area: description;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .places .card .button {

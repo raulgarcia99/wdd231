@@ -43,7 +43,7 @@ export const places = [
   },
   {
     "name": "La Gran Vía",
-    "address": "Carretera Panamericana y Calle Chiltiupan, Antiguo Cuscatlán, El Salvador",
+    "address": "Calle Chiltiupan, Antiguo Cuscatlán, El Salvador",
     "description": "Shopping and lifestyle center with restaurants, shops, and entertainment.",
     "entry_cost": "$0.00",
     "img": "images/la-gran-via.webp"

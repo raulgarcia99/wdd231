@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 640px){
 
     /*Header*/
     
@@ -31,5 +31,37 @@
     .home {
         left: 38.5%;
         width: 25%;
+    }
+
+    /*discover.html*/
+
+    .places .card {
+    height: 280px;
+    grid-template-areas:
+    "name name"
+    "image address"
+    "image description"
+    "image button";
+    }
+
+    .place-name {
+    grid-area: name;
+    }
+
+    .places .card figure {
+    grid-area: image;
+    }
+
+    .place-address {
+    grid-area: address;
+    }
+
+    .place-description {
+    grid-area: description;
+    font-size: 40px;
+    }
+
+    .places .card .button {
+    grid-area: button;
     }
 }
