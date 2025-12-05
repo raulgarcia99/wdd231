@@ -522,6 +522,10 @@ input[type="radio"] {
     font-size: 16px;
 }
 
+#lastVisited {
+    text-align: center;
+}
+
 
 
 /*Footer*/
