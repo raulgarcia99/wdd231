@@ -1,0 +1,39 @@
+@media (min-width: 1024px) {
+    /*Header*/
+
+    #web-icon {
+        position: absolute;
+        top: 0.3rem;
+        left: 1rem;
+        width: 70px;
+}
+
+    .web-title, h1 {
+        font-size: 30px;
+        padding: 20px 0 10px 0;
+    }
+
+    .web-title {
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        width: 100%;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .navigation ul li {
+        padding: 10px;
+    }
+}

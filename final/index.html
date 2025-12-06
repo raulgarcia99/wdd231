@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Espacio Home</title>
+    <meta name="description" content="Cyber Espacio is the perfect place to use and obtain the best technology in
+    San Jose Villanueva, El Salvador.">
+    <meta name="author" content="Raul Garcia">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Cyber Espacio Home">
+    <meta property="og:description" content="Cyber Espacio is the perfect place to use and obtain the best technology in
+    San Jose Villanueva, El Salvador.">
+    <meta property="og:image" content="https://raulgarcia99.github.io/wdd231/final/images/logo.svg">
+    <meta property="og:url" content="https://raulgarcia99.github.io/wdd231/final/">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Metrophobic&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/header-footer.js" defer></script>
+</head>
+<body>
+    <header> 
+        <img src="images/logo.svg" alt="Cyber Espacio logo" class="logo" id="web-icon" loading="lazy">   
+        <span class="web-title">Cyber Espacio</span>
+        <button id="hamButton" class="hamburger" aria-label="More options"> </button>
+        <nav class="navigation" id="navBar">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="./join.html">Join</a></li>
+                <li><a href="./discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="min-width: 1024px">
+                <source srcset="images/hero-medium.webp" media="min-width: 640px">
+                <img src="images/hero-small.webp" alt="Cyper Espacio hero image" id="hero" loading="lazy">
+            </picture>
+        </section>
+        <section class="intro-section">
+            <h1>Welcome to Cyber Espacio</h1>
+            <p>Your one-stop shop for all things technology in San Jose Villanueva, El Salvador. Whether you're looking to
+                purchase the latest gadgets, need a reliable place to work remotely, or want to connect with fellow tech
+                enthusiasts, Cyber Espacio has got you covered.</p>
+        </section>
+        <section class="features-section">
+            <h2>Our Features</h2>
+            <ul>
+                <li><strong>Co-Working Spaces:</strong> Enjoy a productive environment with high-speed internet and comfortable seating.</li>
+                <li><strong>Tech Store:</strong> Browse our wide selection of the latest technology products and accessories.</li>
+                <li><strong>Workshops & Events:</strong> Participate in our regular workshops and events to enhance your tech skills and network with others.</li>
+            </ul>
+        </section>
+        <section class="call-to-action-section">
+            <h2>Join Us Today!</h2>
+            <p>Become a member of Cyber Espacio and take advantage of our exclusive benefits. Whether you're a freelancer,
+                entrepreneur, or tech enthusiast, we have something for everyone. <a href="./join.html">Sign up now</a> and
+                be part of our vibrant community!</p>
+        </section>
+    </main>
+    <footer>
+        <div class="chamber-data">
+            <address><span class="bold lila">Cyber Espacio</span><br>
+                La Vega 1, Calle Principal <br>
+                San Jose Villanueva, El Salvador <br>
+                cyberespacio@gmail.com <br>
+                (+503) 6453-2292 <br>
+            </address>
+        </div>
+        <div class="socialmedia">
+            <a href="https://www.linkedin.com/in/raalgasa/"><img src="images/linkedin-logo.svg" class="logo" alt="LinkedIn logo" loading="lazy"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube-logo.svg" class="logo" alt="Youtube logo" loading="lazy"></a>
+            <a href="https://www.facebook.com"><img src="images/facebook-logo.svg" class="logo" alt="Facebook logo" loading="lazy"></a>
+        </div>
+        <div class="dev-data">
+            <p>
+                ©<span id="currentYear"></span>, Raul A. Garcia, El Salvador<br>
+                <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
