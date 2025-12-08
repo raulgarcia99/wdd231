@@ -1,11 +1,13 @@
 @media (min-width: 1024px) {
+
     /*Header*/
 
     #web-icon {
         position: absolute;
-        top: 0.3rem;
+        top: 0.2rem;
         left: 1rem;
-        width: 70px;
+        width: 90px;
+        height: 90px;
 }
 
     .web-title, h1 {
@@ -42,7 +44,7 @@
     /*index.html*/
 
     .home-title {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .cta {

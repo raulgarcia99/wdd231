@@ -9,9 +9,11 @@
     --dark-font: #060049;
 }
 
-* {
+body {
     font: var(--text-font);
 }
+
+/*Header*/
 
 header {
     background-color: var(--primary-color);
@@ -21,7 +23,7 @@ header {
 
 .logo {
     width: 45px;
-    height: auto;
+    height: 45px;
 }
 
 #web-icon {
@@ -29,6 +31,7 @@ header {
     top: 0.2rem;
     left: 0.6rem;
     width: 60px;
+    height: 60px;
 }
 
 .web-title {
@@ -118,6 +121,16 @@ h1 {
     font: var(--header-font);
     text-align: center;
     margin: 10px;
+}
+
+h2 {
+    font: var(--header-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+section {
+    padding: 10px 10px 20px;
 }
 
 /*index.html*/
