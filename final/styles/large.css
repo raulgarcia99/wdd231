@@ -36,4 +36,26 @@
     .navigation ul li {
         padding: 10px;
     }
+
+    /*Main*/
+
+    /*index.html*/
+
+    .home-title {
+        font-size: 1.8rem;
+    }
+
+    .cta {
+        bottom: 3rem;
+        right: 2rem;
+        font-size: 35px;
+    }
+    
+    .home-slogan {
+        font-size: 30px;
+        bottom: 3rem;
+        left: 2rem;
+        width: 48%;
+        padding: 10px;
+    }
 }

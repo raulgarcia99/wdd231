@@ -5,7 +5,7 @@
     #web-icon {
     top: 0.2rem;
     left: 0.5rem;
-    width: 60px;
+    width: 70px;
     }
 
     .web-title {
@@ -14,7 +14,31 @@
     }
 
     .hamburger {
-        top: 0.2rem;
+        top: 0.5rem;
         right: 0.5rem;
+    }
+
+    /*Main*/
+
+    /*index.html*/
+
+    .home-title {
+        left: 30%;
+        right: 30%;
+        width: 40%;
+    }
+
+    .cta {
+        bottom: 2rem;
+        right: 2rem;
+        font-size: 30px;
+    }
+    
+    .home-slogan {
+        font-size: 25px;
+        bottom: 2rem;
+        left: 2rem;
+        width: 48%;
+        padding: 10px;
     }
 }
