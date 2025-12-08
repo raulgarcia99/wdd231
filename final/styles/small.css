@@ -11,6 +11,7 @@
 
 body {
     font: var(--text-font);
+    color: var(--dark-font);
 }
 
 /*Header*/
@@ -129,8 +130,12 @@ h2 {
     text-align: center;
 }
 
-section {
+section, aside {
     padding: 10px 10px 20px;
+}
+
+li {
+    list-style-type: none;
 }
 
 /*index.html*/
@@ -182,6 +187,11 @@ section {
     left: 4%;
     width: 48%;
     padding: 10px;
+}
+
+section ul li:before {
+    content: "\2605   ";
+    color: var(--primary-color);
 }
 
 /*Footer*/
