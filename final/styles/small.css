@@ -11,7 +11,7 @@
 
 body {
     font: var(--text-font);
-    color: var(--dark-font);
+    color: var(--accent1-color);
 }
 
 /*Header*/
