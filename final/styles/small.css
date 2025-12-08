@@ -6,7 +6,7 @@
     --header-font: 400 30px "Bevan", serif;
     --text-font: 400 22px "Metrophobic", sans-serif;
     --light-font: #FDE85E;
-    --dark-font: #060049;
+    --dark-font: #45154d;
 }
 
 body {
@@ -131,11 +131,26 @@ h2 {
 }
 
 section, aside {
-    padding: 10px 10px 20px;
+    margin: 10px 10px 20px;
+    padding: 10px 10px 15px;
 }
 
 li {
     list-style-type: none;
+}
+
+section ul li:before {
+    content: "\2605   ";
+    color: var(--primary-color);
+}
+
+.box {
+    background-color: var(--accent2-color);
+    border: 2px solid var(--accent1-color);
+}
+
+.grid {
+    display: grid;
 }
 
 /*index.html*/
@@ -189,10 +204,11 @@ li {
     padding: 10px;
 }
 
-section ul li:before {
-    content: "\2605   ";
-    color: var(--primary-color);
+.home {
+    padding: 10px;
+    grid-template-columns: 1fr;
 }
+
 
 /*Footer*/
 
