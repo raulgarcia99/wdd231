@@ -21,6 +21,10 @@
 
     /*Main*/
 
+    h1 {
+        width: 95%;
+    }
+
     /*index.html*/
 
     .home-title {

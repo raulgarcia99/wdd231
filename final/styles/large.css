@@ -10,7 +10,7 @@
         height: 90px;
 }
 
-    .web-title, h1 {
+    .web-title {
         font-size: 30px;
         padding: 20px 0 10px 0;
     }
@@ -40,6 +40,10 @@
     }
 
     /*Main*/
+
+    h1 {
+        width: 97%;
+    }
 
     /*index.html*/
 
