@@ -64,4 +64,38 @@
         width: 48%;
         padding: 10px;
     }
+
+    /*contact.html*/
+
+    .contact {
+        width: 100%;
+        grid-template-columns: none;
+        grid-template-areas:
+        "location form"
+        "contact-info form";
+        justify-items: center;
+    }
+
+    .location {
+        grid-area: location;
+        width: 420px;
+    }
+
+    .map {
+        margin-bottom: 30px;
+    }
+
+    .form {
+        grid-area: form;
+        width: 420px;
+    }
+
+    .contact-info {
+        grid-area: contact-info;
+        width: 420px;
+    }
+
+    .interline {
+        line-height: 60px;
+    }
 }

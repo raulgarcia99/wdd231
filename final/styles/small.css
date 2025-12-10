@@ -118,21 +118,32 @@ main {
     align-items: center;
 }
 
-h1 {
+h1, h2, h3 {
     font: var(--header-font);
     text-align: center;
+}
+
+h1 {
     margin: 10px;
     color: var(--light-font);
     background-color: var(--accent1-color);
+    border-radius: 15px;
+    box-shadow: 0 5px 10px var(--secondary-color);
     padding: 10px;
     width: 90%;
 }
 
 h2 {
-    font: var(--header-font);
-    color: var(--primary-color);
-    text-align: center;
+    color: var(--dark-font);
     font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: var(--dark-font);
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 section, aside {
@@ -154,8 +165,35 @@ section ul li:before {
     border: 2px solid var(--accent1-color);
 }
 
+.center-text {
+    text-align: center;
+}
+
 .grid {
     display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: var(--light-font);
+    border: 2px solid var(--accent1-color);
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+    color: var(--dark-font);
+    border-color: var(--primary-color);
+    box-shadow: 10px 10px 10px var(--primary-color);
+    transition: all 0.3s ease;
 }
 
 /*index.html*/
@@ -175,27 +213,19 @@ section ul li:before {
     right: 15%;
     width: 70%;
     background: none;
+    box-shadow: none;
 }
 
 .cta {
-    background-color: var(--primary-color);
-    color: var(--light-font);
-    border: 2px solid var(--accent1-color);
-    border-radius: 5px;
-    padding: 15px;
     position: absolute;
     bottom: 1rem;
     right: 4%;
     font-size: 20px;
-    cursor: pointer;
 }
 
-.cta:hover{
+.cta:hover {
     background-color: var(--accent2-color);
     color: var(--dark-font);
-    border-color: var(--primary-color);
-    box-shadow: 10px 10px 10px var(--primary-color);
-    transition: all 0.3s ease;
 }
 
 .home-slogan {
@@ -228,13 +258,11 @@ section ul li:before {
 }
 
 .contact-info {
-    width: 420px;
-    
+    width: 420px;   
 }
 
 .form {
     width: 420px;
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -244,22 +272,37 @@ section ul li:before {
 }
 
 form {
-    display: flex;
     flex-direction: column;
 }
 
 input,textarea {
-    height: 40px;
+    height: 35px;
     font: var(--text-font);
     font-size: 20px;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+input:required, input:invalid, textarea:required, textarea:invalid{
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+ input:valid textarea:valid {
+    border-bottom: 5px solid var(--primary-color);
 }
 
 #description {
-    width: auto;
-    height: 80px;
-
+    width: 250px;
+    height: 120px;
+    margin: 10px 0 15px;
 }
 
+input[type="radio"], input[type="checkbox"] {
+    height: auto;
+}
+
+.contact {
+    grid-template-columns: 1fr;
+}
 
 /*Footer*/
 
@@ -279,7 +322,7 @@ footer {
     color: var(--accent2-color);
 }
 
-.chamber-data {
+.cyber-data {
     display: flex;
     text-align: center;
 }
