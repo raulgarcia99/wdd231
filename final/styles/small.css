@@ -3,8 +3,8 @@
     --secondary-color: #FDE85E;
     --accent1-color: #060049;
     --accent2-color: #EEABFF;
-    --header-font: 400 30px "Bevan", serif;
-    --text-font: 400 22px "Metrophobic", sans-serif;
+    --header-font: 400 28px "Bevan", serif;
+    --text-font: 400 20px "Metrophobic", sans-serif;
     --light-font: #FDE85E;
     --dark-font: #45154d;
 }
@@ -135,13 +135,13 @@ h1 {
 
 h2 {
     color: var(--dark-font);
-    font-size: 28px;
+    font-size: 26px;
     margin-bottom: 15px;
 }
 
 h3, .heading3 {
     color: var(--dark-font);
-    font-size: 22px;
+    font-size: 20px;
     text-align: left;
     margin-bottom: 10px;
 }
@@ -316,8 +316,9 @@ input[type="radio"], input[type="checkbox"] {
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 10px 30px;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 90%;
+    row-gap: 10px;
 }
 
 .detail {
