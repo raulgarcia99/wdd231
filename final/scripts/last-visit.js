@@ -14,7 +14,7 @@ if (days === 0) {
     message = `You last visited ${days} days ago.`;
 }
 } else {
-message = "It's good to see for first time!";
+message = "It's good to see you for first time!";
 }
 
 document.querySelector("#lastVisited").innerHTML = message;
