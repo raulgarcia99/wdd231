@@ -53,6 +53,10 @@
         grid-template-columns: 2fr 1fr;
     }
 
+    #lastVisited {
+        width: 95%;
+    }
+
     .discounts {
         grid-area: discounts;
     }
@@ -110,6 +114,10 @@
 
     .filters {
         width: 95%;
+    }
+
+    .filters .button {
+        font-size: 20px;
     }
 
     .products {

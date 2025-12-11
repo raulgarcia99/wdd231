@@ -243,6 +243,18 @@ section ul li:before {
     padding: 10px;
 }
 
+#lastVisited {
+    width: 90%;
+    justify-content: center;
+    background-color: var(--accent2-color);
+    font: var(--header-font);
+    padding: 10px;
+    border: 2px solid var(--accent1-color);
+    border-radius: 70px 5px 70px 5px;
+    margin: 10px 0 15px;
+    font-size: 22px;
+}
+
 .home {
     padding: 10px;
     grid-template-columns: 1fr;
