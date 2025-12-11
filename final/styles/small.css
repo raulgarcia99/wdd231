@@ -231,7 +231,7 @@ section ul li:before {
 
 .home-slogan {
     color: var(--light-font);
-    font-size: 16px;
+    font-size: 14px;
     position: absolute;
     bottom: 1rem;
     left: 4%;
