@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Espacio Contact</title>
-    <meta name="description" content="Contact and visit us, to access to the best available technology in San Jose 
-    Villanueva, check our contact information and more...">
+    <title>Cyber Espacio Services</title>
+    <meta name="description" content="Take a look on the services that we manage, you can create an idea about how much
+    you will spend with our specific calculators for accessing to a computer and more.">
     <meta name="author" content="Raul Garcia">
     <link rel="icon" href="images/favicon.ico">
 
-    <meta property="og:title" content="Cyber Espacio Contact">
-    <meta property="og:description" content="Contact and visit us, to access to the best available technology in San Jose 
-    Villanueva, check our contact information and more...">
+    <meta property="og:title" content="Cyber Espacio Services">
+    <meta property="og:description" content="Take a look on the services that we manage, you can create an idea about how much
+    you will spend with our specific calculators for accessing to a computer and more.">
     <meta property="og:image" content="https://raulgarcia99.github.io/wdd231/final/images/logo.svg">
-    <meta property="og:url" content="https://raulgarcia99.github.io/wdd231/final/contact">
+    <meta property="og:url" content="https://raulgarcia99.github.io/wdd231/final/services">
     <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,6 +37,7 @@
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li class="current"><a href="./services.html">Services</a></li>
+                <li><a href="./store.html">Store</a></li>
                 <li><a href="./contact.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -99,6 +100,22 @@
                 <p id="bnPrintingPrice">$0</p>
                 <div class="calcLabel">Colored: <input class="more-space calcField" id="colorPrintingField" type="number" placeholder="0"></div>
                 <p id="colorPrintingPrice">$0</p> 
+            </div>
+            <div class="service grid box">
+                <h3>Store</h3>
+                <dialog class="myModal" id="printing">
+                    <span class="heading3">Print documents</span>
+                    <p>
+                        Help printing some documents? You can print your documents black and white, and colored. 
+                        You can edit your document before printing, it gives you more control before having your 
+                        document in physical paper. 
+                    </p>
+                    <button class= "closeModal button" id="closePrinting">Close</button>
+                </dialog>
+                <button class="detail button" id="openPrinting">See details</button>
+                <p class="more-space">B/N: $0.10</p>
+                <p class="more-space">Colored: $0.30</p>
+                <button class="button" onclick="window.location.href='./store.html'">See details</button>
             </div>
         </section>
     </main>

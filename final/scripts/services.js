@@ -54,8 +54,7 @@ function computePrice (constant, field, price) {
         price.innerHTML = `$${((number*constant)).toFixed(2)}`;
       } else {
         price.innerHTML = "$0";
-      }
-    
+      }   
 })
 }
 

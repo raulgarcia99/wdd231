@@ -96,4 +96,18 @@
     .interline {
         line-height: 32px;
     }
+
+    /*store.html*/
+
+    .filters {
+        width: 95%;
+    }
+
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .productImg {
+        width: 200px;
+    }
 }

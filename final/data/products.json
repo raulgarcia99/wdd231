@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Cappy",
+    "type": "snack",
+    "price": 0.25,
+    "image":
+    "images/cappy.webp"
+  },
+  {
+    "name": "Cascada Orange",
+    "type": "drink",
+    "price": 0.35,
+    "image": 
+    "images/cascada-orange.webp"
+  },
+  {
+    "name": "Club Extra",
+    "type": "snack",
+    "price": 0.40,
+    "image": 
+    "images/club-extra.webp"
+  },
+  {
+    "name": "Coca-Cola",
+    "type": "drink",
+    "price": 0.85,
+    "image": 
+    "images/coca-cola.webp"
+  },
+  {
+    "name": "Del Valle Tangerine",
+    "type": "drink",
+    "price": 0.60,
+    "image": 
+    "images/del-valle-tangerine.webp"
+  },
+  {
+    "name": "Lays Classic",
+    "type": "snack",
+    "price": 1.00,
+    "image": 
+    "images/lays-classic.webp"
+  },
+  {
+    "name": "Salutaris Lemon",
+    "type": "drink",
+    "price": 0.75,
+    "image": 
+    "images/salutaris-lemon.webp"
+  },
+  {
+    "name": "7UP",
+    "type": "drink",
+    "price": 0.75,
+    "image": 
+    "images/seven-up.webp"
+  },
+  {
+    "name": "Tosh Coconut",
+    "type": "snack",
+    "price": 0.85,
+    "image": 
+    "images/tosh-coconut.webp"
+  },
+  {
+    "name": "Toztecas",
+    "type": "snack",
+    "price": 0.25,
+    "image":
+    "images/toztecas.webp"
+  },
+  {
+    "name": "Yummi Pops",
+    "type": "snack",
+    "price": 0.40,
+    "image": 
+    "images/yummi-pops.webp"
+  },
+  {
+    "name": "Headphones",
+    "type": "accessory",
+    "price": 5.00,
+    "image": 
+    "images/headphones.webp"
+  },
+  {
+    "name": "Earphones Stereo",
+    "type": "accessory",
+    "price": 5.00,
+    "image": 
+    "images/earphones.webp"
+  },
+  {
+    "name": "USB 32gb",
+    "type": "accessory",
+    "price": 10.00,
+    "image": 
+    "images/usb.webp"
+  },
+  {
+    "name": "V8 Tropical Blend",
+    "type": "drink",
+    "price": 1.25,
+    "image":
+    "images/v8-tropical-blend.webp"
+  }
+]

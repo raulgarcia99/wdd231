@@ -104,4 +104,19 @@
     .detailed-services {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /*store.html*/
+
+    .filters {
+        width: 97%;
+    }
+
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+        width: 97%;
+    }
+
+    .productImg {
+        width: 250px;
+    }
 }
