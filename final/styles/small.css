@@ -261,6 +261,14 @@ section ul li:before {
     grid-template-columns: 1fr;
 }
 
+.discounts {
+    padding: 10px;
+}
+
+.services {
+    padding: 10px;
+}
+
 /*contact.html*/
 
 .contact {
