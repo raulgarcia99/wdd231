@@ -98,4 +98,10 @@
     .interline {
         line-height: 60px;
     }
+
+    /*services.html*/
+
+    .detailed-services {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

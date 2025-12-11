@@ -38,7 +38,7 @@ closePrinting.addEventListener("click", () => {
 
 //Calculators
 
-import {pcTimeHour, bnCopy, bnPrinting, colorCopy, colorPrinting, pcPrice, bnCopyPrice, bnPrintingPrice, 
+import {pc15min, bnCopy, bnPrinting, colorCopy, colorPrinting, pcPrice, bnCopyPrice, bnPrintingPrice, 
     colorCopyPrice, colorPrintingPrice} from "./constants.mjs"
 
 const pcField = document.querySelector("#pcField");
@@ -59,7 +59,7 @@ function computePrice (constant, field, price) {
 })
 }
 
-computePrice(pcTimeHour, pcField, pcPrice)
+computePrice(pc15min, pcField, pcPrice)
 computePrice(bnCopy, bnCopyField, bnCopyPrice)
 computePrice(colorCopy, colorCopyField, colorCopyPrice)
 computePrice(bnPrinting, bnPrintingField, bnPrintingPrice)

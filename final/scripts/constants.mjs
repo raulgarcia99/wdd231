@@ -1,4 +1,4 @@
-export const pcTimeHour = 1;
+export const pc15min = 0.25;
 export const bnCopy = 0.05;
 export const colorCopy = 0.25;
 export const bnPrinting = 0.10;

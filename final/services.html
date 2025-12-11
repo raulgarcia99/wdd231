@@ -43,8 +43,8 @@
     </header>
     <main>
         <h1>Services</h1>
-        <section class="detailed-services">
-            <h2>Main services</h2>
+        <h2>Main services</h2>
+        <section class="detailed-services grid">
             <div class="service grid box">
                 <h3>Access to a computer</h3>
                 <dialog class="myModal" id="pc">
@@ -56,9 +56,11 @@
                     </p>
                     <button class="closeModal button" id="closePc">Close</button>
                 </dialog>
-                <button class="detail button" id="openPc">See details</button>  
-                <input class="more-space calcField" id="pcField" type="time" placeholder="Enter a number">
-                <p id="pcPrice"></p>
+                <button class="detail button" id="openPc">See details</button>
+                <p class="more-space">15 minutes block:</p>
+                <p class="more-space">$0.25</p>  
+                <input class="more-space calcField" id="pcField" type="number" placeholder="0">
+                <p id="pcPrice">$0</p>
             </div>
             <div class="service grid box">
                 <h3>Make photocopies</h3>
@@ -72,11 +74,11 @@
                     <button class="closeModal button" id="closeCopy">Close</button>
                 </dialog>
                 <button class="detail button" id="openCopy">See details</button>
-                <p>B/N copy: $0.05</p>
-                <p>Colored copy: $0.25</p>
-                <div class="calcLabel">B and W: <input class="more-space calcField" id="bnCopyField" type="number" placeholder="Enter a number"></div>
+                <p class="more-space">B/N: $0.05</p>
+                <p class="more-space">Colored: $0.25</p>
+                <div class="calcLabel">B and W: <input class="more-space calcField" id="bnCopyField" type="number" placeholder="0"></div>
                 <p id="bnCopyPrice">$0</p>
-                <div class="calcLabel">Colored: <input class="more-space calcField" id="colorCopyField" type="number" placeholder="Enter a number"></div>
+                <div class="calcLabel">Colored: <input class="more-space calcField" id="colorCopyField" type="number" placeholder="0"></div>
                 <p id="colorCopyPrice">$0</p> 
             </div>
             <div class="service grid box">
@@ -91,11 +93,11 @@
                     <button class= "closeModal button" id="closePrinting">Close</button>
                 </dialog>
                 <button class="detail button" id="openPrinting">See details</button>
-                <p>B/N printing: $0.10</p>
-                <p>Colored printing: $0.30</p>
-                <div class="calcLabel">B and W: <input class="more-space calcField" id="bnPrintingField" type="number" placeholder="Enter a number"></div>
+                <p class="more-space">B/N: $0.10</p>
+                <p class="more-space">Colored: $0.30</p>
+                <div class="calcLabel">B and W: <input class="more-space calcField" id="bnPrintingField" type="number" placeholder="0"></div>
                 <p id="bnPrintingPrice">$0</p>
-                <div class="calcLabel">Colored: <input class="more-space calcField" id="colorPrintingField" type="number" placeholder="Enter a number"></div>
+                <div class="calcLabel">Colored: <input class="more-space calcField" id="colorPrintingField" type="number" placeholder="0"></div>
                 <p id="colorPrintingPrice">$0</p> 
             </div>
         </section>
