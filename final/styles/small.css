@@ -250,6 +250,10 @@ section ul li:before {
 
 /*contact.html*/
 
+.contact {
+    justify-items: center;
+}
+
 .map {
     margin: 10px 0 15px;
     border: 2px solid var(--accent1-color);
@@ -397,6 +401,7 @@ input[type="radio"], input[type="checkbox"] {
     border: 1px solid black;
     border-radius: 0;
     width: 100%;
+    font-size: 14px;
 }
 
 .filters .button:hover {

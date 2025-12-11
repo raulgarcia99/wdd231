@@ -70,7 +70,7 @@ function createCards(data) {
         card.classList.add("card", "box")
         img.setAttribute("src", product.image);
         img.setAttribute("alt", `${product.name}`);
-        img.setAttribute("width", "300px");
+        img.setAttribute("width", "250px");
         img.setAttribute("height","auto");
         img.setAttribute("loading", "lazy");
         img.setAttribute("class", "productImg")
