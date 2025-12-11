@@ -246,6 +246,7 @@ section ul li:before {
 #lastVisited {
     width: 90%;
     justify-content: center;
+    text-align: center;
     background-color: var(--accent2-color);
     font: var(--header-font);
     padding: 10px;
