@@ -36,6 +36,18 @@ closePrinting.addEventListener("click", () => {
     printing.close();
 });
 
+const openMyStore = document.querySelector("#openMyStore");
+const myStore = document.querySelector("#myStore");
+const closeMyStore = document.querySelector("#closeMyStore")
+
+openMyStore.addEventListener("click", () => {
+    myStore.showModal();
+});
+
+closeMyStore.addEventListener("click", () => {
+    myStore.close();
+});
+
 //Calculators
 
 import {pc15min, bnCopy, bnPrinting, colorCopy, colorPrinting, pcPrice, bnCopyPrice, bnPrintingPrice, 

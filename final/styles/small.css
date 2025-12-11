@@ -209,7 +209,7 @@ section ul li:before {
 
 .home-title {
     position: absolute;
-    top: 10px;
+    top: 0;
     left: 15%;
     right: 15%;
     width: 70%;
@@ -365,6 +365,22 @@ input[type="radio"], input[type="checkbox"] {
     width: 80px;
 }
 
+.detailed-services .blue {
+    background-color: var(--accent1-color);
+}
+
+.detailed-services .blue h3 {
+    color: var(--light-font);
+}
+
+#openMyStore {
+    color: var(--light-font);
+}
+
+#openMyStore:hover {
+    color: var(--dark-font);
+}
+
 /*store.html*/
 
 .filters {
@@ -420,6 +436,10 @@ footer {
 
 .lila {
     color: var(--accent2-color);
+}
+
+.yellow {
+    color: var(--light-font);
 }
 
 .cyber-data {
