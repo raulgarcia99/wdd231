@@ -100,6 +100,16 @@
         line-height: 60px;
     }
 
+    /*thanks.html*/
+    .thanks {
+    width: 97%;
+}
+
+#formData {
+    width: 97%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
     /*services.html*/
 
     .detailed-services {

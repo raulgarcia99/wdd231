@@ -97,6 +97,15 @@
         line-height: 32px;
     }
 
+    /*thanks.html*/
+    .thanks {
+        width: 95%;
+    }
+
+    #formData {
+        width: 95%;
+    }
+
     /*store.html*/
 
     .filters {

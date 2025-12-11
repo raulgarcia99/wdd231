@@ -294,11 +294,11 @@ input,textarea {
     border-bottom: 5px solid var(--primary-color);
 }
 
-input:required, input:invalid, textarea:required, textarea:invalid{
+input:required, input:invalid, textarea:required, textarea:invalid {
     border-bottom: 5px solid var(--secondary-color);
 }
 
- input:valid textarea:valid {
+ input:valid, textarea:valid {
     border-bottom: 5px solid var(--primary-color);
 }
 
@@ -310,6 +310,22 @@ input:required, input:invalid, textarea:required, textarea:invalid{
 
 input[type="radio"], input[type="checkbox"] {
     height: auto;
+}
+
+/*thanks.html*/
+
+.thanks {
+    width: 90%;
+    margin: 10px 0px 10px;
+    padding: 0 10px 0;
+}
+
+#formData {
+    width: 90%;
+}
+
+#formData p {
+    padding: 10px;
 }
 
 /*services.html*/
