@@ -215,6 +215,8 @@ section ul li:before {
     width: 70%;
     background: none;
     box-shadow: none;
+    margin: 0;
+    font-size: 24px;
 }
 
 .cta {
